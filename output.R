@@ -17,10 +17,15 @@ summary <- read.taf("data/summary_catch.csv")
 
 # create SAG inputs
 sag_info <-
-  stockInfo(StockCode = "san.sa.6",
-            AssessmentYear = 2019,
-            ContactPerson = "sarahlmillar@ices.dk",
-            Purpose = "Advice")
+  stockInfo(
+    StockCode = "san.sa.6",
+    AssessmentYear = 2019,
+    ContactPerson = "someone@fishlab.world",
+    Purpose = "Advice",
+    StockCategory = 5,
+    ModelType = "None",
+    ModelName = "None"
+  )
 sag_info$RecruitmentAge <- 0
 
 sag_fishdata <-
